@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "266375208809",
+    "firebase_url": "https://furebaselogin.firebaseio.com",
+    "project_id": "furebaselogin",
+    "storage_bucket": "furebaselogin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266375208809:android:d5e7539763cb9da6",
+        "android_client_info": {
+          "package_name": "com.example.furebaselogin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266375208809-2s0rntv952cp58nb7nm16bvkq7jo280q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.furebaselogin",
+            "certificate_hash": "08463ddc015a00298a182581f9e4400352b1b60d"
+          }
+        },
+        {
+          "client_id": "266375208809-7msc5tg362ijn6anc6qhso4v3nj6o20l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCCsAnIl8C8J_pt6mDxklCXY9BXpCQrWsE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266375208809-7msc5tg362ijn6anc6qhso4v3nj6o20l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
