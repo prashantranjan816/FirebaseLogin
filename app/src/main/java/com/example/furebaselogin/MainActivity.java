@@ -40,34 +40,8 @@ public class MainActivity extends AppCompatActivity {
         mAuth = FirebaseAuth.getInstance();
 
 
-////========================BackGround Animation================================
-//        kbv = findViewById(R.id.kbv);
-//
-//        AccelerateDecelerateInterpolator adi = new AccelerateDecelerateInterpolator();
-//        RandomTransitionGenerator generator = new RandomTransitionGenerator(2000, adi);
-//        kbv.setTransitionGenerator(generator);
-//
-//        kbv.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (moving) {
-//                    kbv.pause();
-//                    moving = false;
-//                } else {
-//                    kbv.resume();
-//                    moving = true;
-//                }
-//            }
-//        });
-//
-//
-////====================================================================================
-
-
-
 
     }
-
 
     private boolean validateEmail(String email) {
         return (!TextUtils.isEmpty( email ) && Patterns.EMAIL_ADDRESS.matcher( email ).matches());
@@ -140,7 +114,6 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
     private void updateUI() {
         Intent intent = new Intent( this, Main2Activity.class );
 
@@ -156,27 +129,6 @@ public class MainActivity extends AppCompatActivity {
         String password = passwordEt.getText().toString().trim();
         signupUser( user, password );
 
-
-//        Below two line will get value of user_name field & get in string to pass forword
-//        EditText editText = findViewById(R.id.user_name);
-//        message = editText.getText().toString();
-
-
-//        Intent intent = new Intent(this,Main2Activity.class);
-//
-////        Below one line will send extra message to next activity.
-//        intent.putExtra("EXTRA_MESSAGE1",message);
-//
-//        startActivity(intent);
-
-
-    }
-
-    public void guest_submit(View view) {
-
-//        Intent intent = new Intent( this, Main3Activity.class );
-//
-//        startActivity( intent );
 
     }
 
@@ -200,40 +152,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-// Initialize Facebook Login button
-
-    //    private void setFacebookSDK() {
-//
-//        Callbac  mCallbackManager = CallbackManager.Factory.create();
-//        LoginButton loginButton = findViewById(R.id.buttonFacebookLogin);
-//        loginButton.setReadPermissions("email", "public_profile");
-//        loginButton.registerCallback(mCallbackManager, new FacebookCallback<LoginResult>() {
-//            @Override
-//            public void onSuccess(LoginResult loginResult) {
-//                Log.d(TAG, "facebook:onSuccess:" + loginResult);
-//                handleFacebookAccessToken(loginResult.getAccessToken());
-//            }
-//
-//            @Override
-//            public void onCancel() {
-//                Log.d(TAG, "facebook:onCancel");
-//                // ...
-//            }
-//
-//            @Override
-//            public void onError(FacebookException error) {
-//                Log.d(TAG, "facebook:onError", error);
-//                // ...
-//            }
-//        });
-//    }
-    // ...
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult( requestCode, resultCode, data );
 
-        // Pass the activity result back to the Facebook SDK
-//        mCallbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
 
