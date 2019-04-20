@@ -194,9 +194,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void login_guest(View view) {
         Toast.makeText( this, "Guest Login", Toast.LENGTH_SHORT ).show();
-//        Intent intent = new Intent( this, Main3Activity.class );
-//
-//        startActivity( intent );
+        Intent intent = new Intent( this, Main3Activity.class );
+
+        startActivity( intent );
 
     }
 
