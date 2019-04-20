@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                             } else {
                                 // If sign in fails, display a message to the user.
                                 Log.w( TAG, "createUserWithEmail:failure", task.getException() );
-                                Toast.makeText( MainActivity.this, "Authentication failed.",
+                                Toast.makeText( MainActivity.this, "Authentication failed. or if This mail id is already used please login Option.",
                                         Toast.LENGTH_SHORT ).show();
                             }
 
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     } );
         } else {
-            Toast.makeText( MainActivity.this, "invalid email .",
+            Toast.makeText( MainActivity.this, "please follow valid Mail pattern & password min 8 char .",
                     Toast.LENGTH_SHORT ).show();
         }
     }
@@ -109,7 +109,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     } );
         } else {
-            Toast.makeText( MainActivity.this, "password email",
+            Toast.makeText( MainActivity.this, "please fill valid password & email",
                     Toast.LENGTH_SHORT ).show();
         }
     }
